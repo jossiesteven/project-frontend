@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    
+    <div id="form-container">
+        <h3>Formulario Libro</h3><br><br>
+
+        <form>
+        <div class="input-field col s6">
+            <label for="name">Nombre Libro</label>  
+            <input placeholder="Ingrese nombre libro" id="name" type="text" class="validate">
+              
+            </div>
+          <div class="input-field col s6">
+            <label for="author">Autor Libro</label>  
+            <input placeholder="Ingrese autor del libro" id="author" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s6">
+            <label for="isbn">ISBN Libro</label>  
+            <input placeholder="Ingrese código ISBN del libro" id="isbn" type="text" class="validate">
+          </div>
+
+          <div class="input-field col s6">
+            <label for="edition">Edición Libro</label>  
+            <input placeholder="Ingrese edición del libro" id="edition" type="text" class="validate">
+          </div>
+
+          <div>
+            <button class="btn waves-effect waves-light" type="button" id="guardar" id="save" onclick=saveBook()>Guardar libro
+                <i class="material-icons right">send</i>
+              </button>
+          </div><br><br>
+        </form>
+
+        <div>
+          <button class="btn waves-effect waves-light" type="button" id="guardar" id="save" onclick=saveBook()>Consultar libro
+              <i class="material-icons right">send</i>
+            </button>
+        </div>
+
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script src="script.js"></script>
+            
+</body>
+</html>
